@@ -48,10 +48,10 @@ void reservation::booking()
          << "Enter Session end time :";
     cin >> hotel[q].send;
     cout << endl
-         << "From : ";
+         << "From :";
     cin >> hotel[q].from;
     cout << endl
-         << "To : ";
+         << "To :";
     cin >> hotel[q].to;
     hotel[q].empty();
     q++;
