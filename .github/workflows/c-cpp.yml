@@ -13,7 +13,7 @@ class reservation
     // all features want in the problem
     char room_number[5], host[5], start[5], send[5], from[5], to[5], chair[10][4][10];  // 10 rows 4 columns & 10 rooms
 
-public:
+public;
 // let's define all functions
     void booking();
     void allotment();
