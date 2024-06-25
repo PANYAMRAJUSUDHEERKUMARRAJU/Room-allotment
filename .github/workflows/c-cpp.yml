@@ -36,13 +36,13 @@ void design(char todraw)
 void reservation::booking()
 {
     // take every required detail of room & host
-    cout << "Please enter room number : ";
+    cout << "Please enter room number ";
     cin >> hotel[q].room_number;
     cout << endl
-         << "Please enter Customer's name : ";
+         << "Please enter Customer's name ";
     cin >> hotel[q].host;
     cout << endl
-         << "Enter start time :";
+         << "Enter start time ";
     cin >> hotel[q].start;
     cout << endl
          << "Enter Session end time :";
