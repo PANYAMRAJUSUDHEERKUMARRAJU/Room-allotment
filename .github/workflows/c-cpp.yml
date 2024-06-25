@@ -63,9 +63,9 @@ void reservation::allotment()
     int chair;
     char num[5];
 
-top:
+top;
 // enter room no if installed then look for chair otherwise enter a valid room no.
-    cout << "Room no. :";
+    cout << "Room no.:";
     cin >> num;
     int n;
 
@@ -91,7 +91,7 @@ top:
             // if required chair is empty then take traveller's data
             if (strcmp(hotel[n].chair[chair / 4][(chair % 4) - 1], "Empty") == 0)
             {
-                cout << "Enter traveller's name: ";
+                cout << "Enter traveller's name:";
                 cin >> hotel[n].chair[chair / 4][(chair % 4) - 1];
                 break;   // once chair is reserved then come out of the process of allotment
             }
@@ -141,8 +141,8 @@ void reservation::display()
     // create a line of * to distinguish show data
         design('#');
     // show the room installing informations
-        cout << "Room number \t" << hotel[a].room_number << "\nHost: \t" << hotel[a].host << "\t\tStart time: \t"
-             << hotel[a].start << "\t End time:" << hotel[a].send << "\nFrom: \t\t" << hotel[a].from << "\t\tTo: \t\t" << hotel[a].to << "\n";
+        cout << "Room number \t" << hotel[a].room_number << "\nHost:\t" << hotel[a].host << "\t\tStart time:\t"
+             << hotel[a].start << "\t End time:" <<hotel[a].send << "\nFrom:\t\t" << hotel[a].from<< "\t\tTo:\t\t" << hotel[a].to << "\n";
     // show line to distinguish again
         design('#');
 
